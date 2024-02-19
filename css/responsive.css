@@ -1,0 +1,48 @@
+@media (max-width:1440) {
+  .ban_text h1 {
+      top: 50%;
+      left: 20%;
+    }
+}
+
+
+@media (max-width:2560){
+  .tokyo-small{
+       padding:2rem 33rem;
+     }
+     
+}
+@media only screen and (max-width: 991px) {
+  
+  .ban_text h1 {
+       line-height:37px;
+       left: 14%;
+  }
+ 
+}
+@media only screen and (max-width: 767px) {
+  .ban_img img {
+    min-height: 290px;
+    object-fit: cover;
+  }
+  .ban_text h1 {
+   
+      left: 10%;
+ }
+}
+@media only screen and (max-width: 1024px){
+   .types-seweed-images img{
+    padding-top:9%;
+   }
+   .uses-seweed-main{
+    padding:2rem 2rem;
+   }
+}
+@media only screen and (max-width: 1440px){
+  .uses-seweed-main{
+    padding:3rem 3rem;
+   }
+   .types-seweed-images img{
+    /* padding-top:9%; */
+   }
+}
