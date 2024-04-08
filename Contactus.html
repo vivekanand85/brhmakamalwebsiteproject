@@ -32,35 +32,44 @@
       
       <style>
         .form-section{
-        
-        background: #2C8275;  
-        margin: 0;
-        font-family: 'Montserrat', sans-serif;
-        background:
+        /* padding: 2rem; */
+        /* background-color: whitesmoke;  */
+        /* margin: 0; */
+        position: relative;
+        margin-bottom: 5rem;
+        padding-bottom: 3rem;
+        /* font-family: 'Montserrat', sans-serif; */
+        /* background:
         linear-gradient(27deg, #2C8275 5px, transparent 5px) 0 5px,
         linear-gradient(207deg, #2C8275 5px, transparent 5px) 10px 0px,
         linear-gradient(27deg, #2C8275 5px, transparent 5px) 0px 10px,
         linear-gradient(207deg, #2C8275 5px, transparent 5px) 10px 5px,
         linear-gradient(90deg, #2C8275 10px, transparent 10px),
         linear-gradient(#2C8275 25%, #7c7474 25%, #2C8275 50%, transparent 50%, transparent 75%, #2C8275 75%, #2C8275);
-      background-color: #2C8275;
+      background-color: #2C8275; */
       background-size: 20px 20px;
     }
         
         .form {
-        max-width: calc(100vw - 40px);
+          /* color: white; */
+          position: absolute;
+          /* align-content: end; */
+        /* max-width: calc(100vw - 40px); */
         width: 500px;
-        height: auto;
+        /* height: auto; */
+        top: 10%;
+        left: 50%;
+        /* background-color:green; */
         background: rgba(255, 255, 255, 1);
         border-radius: 8px;
         box-shadow: 0 0 40px -10px #fff;
-        margin: 3% auto;
+        /* margin: 3% auto; */
         padding: 20px 30px;
         box-sizing: border-box;
-        position: relative;
+        /* position: relative; */
         border-bottom: 5px solid #ccc;
     }
-    form:before {
+    /* form:before {
         content: '';
         position: absolute;
         top: 0;
@@ -77,14 +86,14 @@
         background: -ms-linear-gradient(left, rgba(196,225,127,1) 0%, rgba(196,225,127,1) 20%, rgba(247,253,202,1) 20%, rgba(247,253,202,1) 40%, rgba(254,207,113,1) 40%, rgba(254,207,113,1) 60%, rgba(240,119,108,1) 60%, rgba(240,119,108,1) 80%, rgba(219,157,190,1) 80%, rgba(219,157,190,1) 100%);
         background: linear-gradient(to right, rgba(196,225,127,1) 0%, rgba(196,225,127,1) 20%, rgba(247,253,202,1) 20%, rgba(247,253,202,1) 40%, rgba(254,207,113,1) 40%, rgba(254,207,113,1) 60%, rgba(240,119,108,1) 60%, rgba(240,119,108,1) 80%, rgba(219,157,190,1) 80%, rgba(219,157,190,1) 100%);
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c4e17f', endColorstr='#db9dbe', GradientType=1 );
-    }
+    } */
     .form h2 {
         margin: 18px 0;
         padding-bottom: 10px;
         width: 210px;
         color: #1e439b;
         font-size: 22px;
-        border-bottom: 3px solid #ff5501;
+        border-bottom: 3px solid #2C8275;
         font-weight: 600;
         margin-bottom: 30px;
     }
@@ -111,7 +120,7 @@
         transition: all .3s;
     }
     button {
-        padding: 8px 12px;
+        padding: 2rem;
         margin: 8px 0 0;
         font-family: 'Montserrat', sans-serif;
         border: 2px solid #78788c;
@@ -251,6 +260,14 @@
     /* --- Media Queries --- */
     
     @media only screen and (max-width: 600px) {
+      .form{
+        width: 200px;
+        position: relative;
+        left: 10%;
+        margin-bottom: 7rem;
+        padding: 0;
+        
+      }
         p:before{
             content: attr(type);
             width: 100%
@@ -258,6 +275,13 @@
         input{
             width: 100%;
         }
+    }
+    @media screen and (max-width:770px){
+      .form{
+        left: 20%;
+        margin-bottom: 6rem;
+      }
+
     }
       </style>
       
@@ -270,7 +294,7 @@
         <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
           <div class="container">
             <a class="navbar-brand" href="index.html"
-              ><img src="images/Logo.png" alt="logo" style="width: 25%"
+              ><img src="images/Logo.png" alt="logo" style="width: 20%"
             /></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -278,7 +302,7 @@
             <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="index.html"
+                  <a class="nav-link " aria-current="page" href="index.html"
                     >Home</a
                   >
                 </li>
@@ -297,8 +321,8 @@
               </ul>
     
               <a href="Contactus.html"
-                ><button class="btn btn-outline-success" type="submit">
-                  Contact us
+                ><button class="btn btn-outline-success active" type="submit">
+                  <h5 class="m-0">Contact us</h5>
                 </button></a
               >
             </div>
@@ -306,41 +330,46 @@
         </nav>
     
     
-         <section class="form-section">
-          <form class="form">
+         <section class="form-section container-fluid">
+          <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12">        
+              <video src="images/impact-tab-video.mp4" w-100 style="width: 100%; height: auto;" preload="metadata" loop muted autoplay></video>
+          </div>
+          <div class="col-lg-12 col-md-12 col-sm-12">
+             <form class="form" action="sendmail.php" method="post">
             <h2 class="text-success">Get In Touch</h2>
             <div class="form-group">
-              <label for="email">Full Name:</label>
+              <label for="name">Full Name:</label>
               <div class="relative">
-                <input class="form-control" id="name" type="text" pattern="[a-zA-Z\s]+" required="" autofocus="" title="Username should only contain letters. e.g. Piyush Gupta" autocomplete="" placeholder="Type your name here...">
+                <input class="form-control" id="name" name="name" type="text" pattern="[a-zA-Z\s]+" required="" autofocus="" title="Username should only contain letters." autocomplete="" placeholder="Type your name here...">
                 <!-- <i class="fa fa-user"></i> -->
               </div>
             </div>
             <div class="form-group">
               <label for="email">Email address:</label>
               <div class="relative">
-                <input class="form-control" type="email" required="" placeholder="Type your email address..." pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+                <input class="form-control" type="email" name="email"  required placeholder="Type your email address..." pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
                 <!-- <i class="fa fa-envelope"></i> -->
               </div>
             </div>
             <div class="form-group">
-              <label for="email">Contact Number:</label>
+              <label for="tel">Contact Number:</label>
               <div class="relative">
-                <input class="form-control" type="text" maxlength="10" oninput="this.value=this.value.replace(/[^0-9]/g,'');" required="" placeholder="Type your Mobile Number...">
+                <input class="form-control" type="tel" name="phone" oninput="this.value=this.value.replace(/[^0-9]/g,'');" required="" placeholder="Type your Mobile Number...">
                 <!-- <i class="fa fa-phone"></i> -->
               </div>
             </div>
            
             
             <div class="form-group">
-              <label for="email">Message</label>
+              <label for="message" name="message">Message</label>
               <div class="relative">
-                <input class="form-control" type="text" id="tags" required="" placeholder="Type your specialization...">
+                <input class="form-control" name="message" type="text" name="message" id="tags" required="" placeholder="Type your specialization...">
                 
               </div>
             </div>
             
-            <button type="button" class="btn btn-outline-success " id="myBtn3">Submit</button>
+            <button type="submit" class="btn btn-outline-success px-4 py-2 fw-bold" id="myBtn3">Submit</button>
        
             <!-- <div class="tright">
               <a href=""><button class="movebtn movebtnsu text-success btn-outline-success" type="Submit">Submit <i class="fa fa-fw fa-paper-plane"></i></button></a>
@@ -352,6 +381,10 @@
             <p><small>Your message has been successfully sent.</small></p>
           </div>
           
+          </div>
+              
+          </div>
+       
           
          </section>
           
@@ -387,7 +420,7 @@
                       </div>
                       <div class="col-xl-4 col-md-6 col-sm-6">
                         <h3>Location</h3>
-                        <h4>Brahma Kamal Research LLP <br> KIIT-TBI, Room No. 214 KIIT Campus No. 11 KIIT University, 
+                        <h4>Brahma Kamal Research LLP <br> KIIT-TBI, Room No. 214 KIIT Campus No. 11 <br> KIIT University, 
                           Bhubaneswar - 751024 </h4>
                        
                       </div>
@@ -409,8 +442,8 @@
                     <!-- <div class="col-lg-6">
                       <h3>privacy policy | terms & conditions</h3>
                     </div> -->
-                    <div class="col-lg-12">
-                      <h3>all copyright (c) <span class="year">2024</span> reserved</h3>
+                    <div class="col-lg-12 text-center">
+                      <h3>all copyright &copy; <span class="year">2024</span> - Brahma kamal</h3>
                     </div>
                 </div>
               </div>
